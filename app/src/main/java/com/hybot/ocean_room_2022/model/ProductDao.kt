@@ -8,7 +8,7 @@ import androidx.room.Query
 @Dao
 interface ProductDao {
     @Insert
-    fun create(products: ProductEntity)
+    fun create(product: ProductEntity)
     @Query("SELECT * FROM products")
-    fun selectall(): LiveData<List<ProductEntity>>
+    fun selectAll(): LiveData<List<ProductEntity>>
 }
