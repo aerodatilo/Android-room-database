@@ -2,7 +2,9 @@ package com.hybot.ocean_room_2022.model
 
 import androidx.room.Entity
 
-@Entity
-data class ProdutoEntity(
-
+@Entity (tableName = "products")
+data class ProductEntity(
+    val id: Long?,
+    val name: String,
+    val imageUrl: String?
 )
